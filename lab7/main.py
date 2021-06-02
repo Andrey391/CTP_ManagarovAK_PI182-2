@@ -1,0 +1,21 @@
+import math
+print("Начинаем упражнение")
+condition = int(input())
+if condition == 1:
+    a = int(input())
+    b = int(input())
+    c = int(input())
+    p = ((a + b + c) / 2)
+    s =math.sqrt(p*(p-a)*(p-b)*(p-c))
+    print(s)
+elif condition == 2:
+    x1, y1 = map(int, input().split())
+    x2, y2 = map(int, input().split())
+    x3, y3 = map(int, input().split())
+    a = math.sqrt((x2 - x1) ** 2 + (y2 - y1) ** 2)
+    b = math.sqrt((x3 - x2) ** 2 + (y3 - y2) ** 2)
+    c = math.sqrt((x1 - x3) ** 2 + (y1 - y3) ** 2)
+    p = ((a + b + c) / 2.0)
+    s = math.sqrt(p * (p - a) * (p - b) * (p - c))
+    print(s)
+print("Заканчиваем упражнение")
